@@ -19,17 +19,6 @@ if (empty($_POST["email"])) {
     $email = $_POST["email"];
 }
 
-if (empty($_POST["select"])) {
-    $errorMSG = "Select is required ";
-} else {
-    $select = $_POST["select"];
-}
-
-if (empty($_POST["terms"])) {
-    $errorMSG = "Terms is required ";
-} else {
-    $terms = $_POST["terms"];
-}
 
 $EmailTo = "bhashkarjyanath1999@gmail.com";
 $Subject = "A New Volunteer has joined";
@@ -44,12 +33,6 @@ $Body .= $phone;
 $Body .= "\n";
 $Body .= "Email: ";
 $Body .= $email;
-$Body .= "\n";
-$Body .= "Package: ";
-$Body .= $select;
-$Body .= "\n";
-$Body .= "Terms: ";
-$Body .= $terms;
 $Body .= "\n";
 
 // send email
