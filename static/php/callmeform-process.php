@@ -31,7 +31,7 @@ if (empty($_POST["terms"])) {
     $terms = $_POST["terms"];
 }
 
-$EmailTo = "foundationbloom@gmail.com";
+$EmailTo = "bhashkarjyanath1999@gmail.com";
 $Subject = "A New Volunteer has joined";
 
 // prepare email body text
